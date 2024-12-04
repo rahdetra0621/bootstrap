@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Manipulasi Dokumen html</title>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora nemo, et impedit voluptatem alias tenetur ullam vel placeat quia quis qui sit temporibus sed nulla cupiditate necessitatibus dignissimos ad eligendi officiis amet molestias velit! Quisquam quibusdam doloribus impedit illum consequatur beatae provident minus voluptates veniam delectus exercitationem doloremque iusto reiciendis, officiis dolores voluptate neque, sunt quidem, deleniti rem unde quas laudantium? Mollitia saepe voluptatum exercitationem id perferendis dolorum, alias officia delectus, modi deleniti odio magni repellendus pariatur qui architecto deserunt cum! Cupiditate voluptate maiores iure animi numquam! Molestias quas vero enim minus cupiditate, doloribus ducimus quae itaque inventore numquam beatae?
+    </p>
+        <button class="cmdTampil">tampilkan Text</button>
+    
+    
+    <script src="jquery/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            $('.cmdTampil').hide()
+
+            $('p').on('click',function(){
+                $(this).hide(500)
+                $('.cmdTampil').show()
+            })
+            $(".cmdTampil").on('click',function(){
+                $('p').show(1000)
+                $(this).hide()
+
+            })
+        })
+    </script>
+</body>
+</html>
